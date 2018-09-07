@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TMC:n asennus | Virhe testien ajossa</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="../stylesheets/styles-954d2946.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container main-container">
+        <div class="container">
+  <div class="page-header">
+  <h1>JAVA_HOME ongelman ratkaiseminen</h1>
+  </div>
+
+  <p>
+    Jos sinulla ilmenee "FAIL: Compilation failed" -virhe NetBeansissa testien ajamisessa, seuraa allaolevia ohjeita virheen korjaamiseksi.
+  </p>
+
+  <div class="divider"></div>
+</div>
+
+
+<div class="content-box ">
+    <div class="content-box__box">
+
+        <div class="content-box__body">
+            
+  <p>Jos sinulla tulee seuraavanlainen virhe testien ajossa, seuraa allaolevia ohjeita virheen korjaamiseksi.</p>
+  <div>
+    <img src="../img/maven_failure_netbeans.PNG" class="img-fluid demo-image" alt="Maven failure netbeans" />
+    <img src="../img/maven_failure_netbeans_detailed_msg.PNG" class="img-fluid demo-image" alt="Maven failure netbeans detailed msg" />
+  </div>
+  <h2>Korjausaskeleet</h2>
+
+  <b>Selvitetään ensin, missä polussa Java on asennettuna koneellasi.</b>
+
+  <ol>
+    <li>
+      <p>Avaa ensin Command Prompt -ohjelma.</p>
+      <img src="../img/command_prompt_search.PNG" class="img-fluid demo-image" alt="Command prompt search" />
+    </li>
+    <br>
+    <li>
+      <p>Kirjoita sinne komento "where javac" (ilman lainausmerkkejä). Ikkunassa näkyy seuraavalla rivillä polku, jossa Java on asennettuna. Kopioi siitä talteen polku Javan versionumeroon asti. Eli loppuosaa "/bin/javac.exe" ei tarvita. Kopioitava polku on korostettuna valkoisella allaolevassa kuvassa.</p>
+      <b>Huom! Ei haittaa, vaikka versionumerosi olisi eri kuin kuvassa.</b>
+      <br>
+      <img src="../img/command_prompt_view.PNG" class="img-fluid demo-image" alt="Command prompt view" />
+    </li>
+  </ol>
+  <br>
+  <b>Ongelma aiheutuu siitä, että koneelle ei ole asetettu muuttujaa JAVA_HOME. Voimme käydä nyt asettamassa polun Java-asennukseen, jolloin ohjelmointitehtävät tietävät jatkossa, missä Java on asennettuna.</b>
+
+  <ol>
+    <li>
+      <p>Avaa ensin Control Panel -ohjelma.</p>
+      <img src="../img/control_panel_search.PNG" class="img-fluid demo-image" style="height:600px;" alt="Control panel search" />
+    </li>
+    <br>
+    <li>
+      <p>Valitse Control Panel:sta System-osio.</p>
+      <img src="../img/control_panel_view.PNG" class="img-fluid demo-image" alt="Control panel view" />
+    </li>
+    <br>
+    <li>
+      <p>Valitse vasemmasta reunasta "Advanced system settings".</p>
+      <img src="../img/system_view.PNG" class="img-fluid demo-image" alt="System view" />
+    </li>
+    <br>
+    <li>
+      <p>Paina aukeavasta näkymästä "Environment variables" -nappia.</p>
+      <img src="../img/advanced_system_settings_view.PNG" class="img-fluid demo-image" alt="Advanced system settings view" />
+    </li>
+    <br>
+    <li>
+      <p>Paina aukeavasta näkymästä "System variables"-ikkunan alta "New..." -nappia.</p>
+      <img src="../img/environment_variables_view.PNG" class="img-fluid demo-image" alt="Environment variables view" />
+    </li>
+    <br>
+    <li>
+      <p>Kirjoita aukeavan näkymän "Variable name" -kenttään "JAVA_HOME" ilman lainausmerkkejä. Huomaathan, että kirjainten pitää olla isolla kirjoitettuna. Kirjoita kenttään "Variable value" aiemmin hakemasi polku. Huomaathan, että polkuun ei tule sisällyttää "/bin/javac.exe"-loppuosaa. Paina lopuksi "OK" -nappia.</p>
+      <img src="../img/adding_java_home_env_var.PNG" class="img-fluid demo-image" alt="Adding java home env var" />
+    </li>
+    <br>
+    <li>
+      <p>Jos sinulla oli NetBeans auki tämän prosessin aikana, käynnistä se uudestaan.</p>
+    </li>
+  </ol>
+
+        </div>
+    </div>
+</div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="../javascripts/scripts-d2e4b969.js"></script>
+  </body>
+</html>
