@@ -38,7 +38,19 @@
 
   <b>Selvitetään ensin, missä polussa Java on asennettuna koneellasi.</b>
 
-  <p>Navigoi Javan asennuskansioon. Allaolevasta kuvakaappauksesta näkee kutakuinkin, mihin Java on asennettuna. Kirjoita muistiin polku, jossa Java on asennettuna. Voit kopioida polun talteen hakemiston yläreunasta. Esimerkiksi kuvakaappauksessa oikea polku on tuo yläreunassa lukeva C:\Program Files\Java\jdk1.8.0_144</p>
+  <ol>
+    <li>
+      <p>Avaa ensin Command Prompt -ohjelma.</p>
+      <img src="../img/command_prompt_search.PNG" class="img-fluid demo-image" alt="Command prompt search" />
+    </li>
+    <br>
+    <li>
+      <p>Kirjoita sinne komento "where javac" (ilman lainausmerkkejä). Ikkunassa näkyy seuraavalla rivillä polku, jossa Java on asennettuna. Kopioi siitä talteen polku Javan versionumeroon asti. Eli loppuosaa "/bin/javac.exe" ei tarvita. Kopioitava polku on korostettuna valkoisella allaolevassa kuvassa.</p>
+      <b>Huom! Ei haittaa, vaikka versionumerosi olisi eri kuin kuvassa.</b>
+      <br>
+      <img src="../img/command_prompt_view.PNG" class="img-fluid demo-image" alt="Command prompt view" />
+      <br>
+      <p><b>Jos komento "where javac" ei toimi koneellasi</b>, navigoi käsin Javan asennuskansioon. Allaolevasta kuvakaappauksesta näkee kutakuinkin, mihin Java on asennettuna. Joudut kohdassa 6 kirjoittamaan itse kentän "Variable value" sisällön. Kirjoita löytämäsi polku niin, että sisempään kansioon siirtyminen korvataan aina kenoviivalla (\-merkki). Esimerkiksi kuvakaappauksen polku kirjoitettaisiin seuraavasti: C:\Program Files\Java\jdk1.8.0_144. Huomaathan, että polun kirjoittaminen aloitetaan levyasemasta, eli "C:". Tuota "This PC":tä ei siis tarvitse kirjoittaa, eikä myöskään "Windows":ia ennen tuota "C:"</p>
       <br>
       <img src="../img/explorer_path_to_java.PNG" class="img-fluid demo-image" alt="Explorer path to java" />
       <br>
@@ -74,7 +86,7 @@
     </li>
     <br>
     <li>
-      <p>Kirjoita aukeavan näkymän "Variable name" -kenttään "JAVA_HOME" ilman lainausmerkkejä. Huomaathan, että kirjainten pitää olla isolla kirjoitettuna. Kirjoita kenttään "Variable value" aiemmin hakemasi polku Javan asennuskansioon. Paina lopuksi "OK" -nappia.</p>
+      <p>Kirjoita aukeavan näkymän "Variable name" -kenttään "JAVA_HOME" ilman lainausmerkkejä. Huomaathan, että kirjainten pitää olla isolla kirjoitettuna. Kirjoita kenttään "Variable value" aiemmin hakemasi polku. Huomaathan, että polkuun ei tule sisällyttää "/bin/javac.exe"-loppuosaa. Paina lopuksi "OK" -nappia.</p>
       <img src="../img/adding_java_home_env_var.PNG" class="img-fluid demo-image" alt="Adding java home env var" />
     </li>
     <br>
