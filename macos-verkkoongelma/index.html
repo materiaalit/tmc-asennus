@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TMC:n asennus | Verkkoyhteyden korjaaminen macOS -käyttöjärjestelmällä</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="../stylesheets/styles-954d2946.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container main-container">
+        <div class="container">
+  <div class="page-header">
+  <h1>Verkkoyhteyden korjaaminen macOS -käyttöjärjestelmällä</h1>
+  </div>
+
+
+  <div class="divider"></div>
+</div>
+
+
+<div class="content-box ">
+    <div class="content-box__box">
+
+        <div class="content-box__body">
+            
+  <p>Uusimpien macOS käyttöjärjestelmien kanssa on monesti ollut ongelmana, että Java ohjelmat, jotka käyttävät internetyhteyttä ovat todella hitaita ja eivät välillä toimi lainkaan.</p>
+  <p>Tämä johtuu ongelmista koneen paikallisen nimen ratkaisussa. Ongelma on kuitenkin helppo ratkaista.</p>
+  <p>Saat helpoiten komentorivin auki spotlight -haun kautta. Spotlight haun saat auki painamalla cmd+välilyönti:</p>
+  <p>
+  <img src="../img/macosverkko/spotlight-2b580d29.png" style="max-width:100%;" alt="Spotlight" />
+  </p>
+  <p>Ja kirjoita hakukenttään <code>terminal</code>
+  <img src="../img/macosverkko/spotlight_terminal-322f6e4e.png" style="max-width:100%;" alt="Spotlight terminal" />
+  ja paina enter.</p>
+  <p>Nyt olet avannut komentorivin:
+  <img src="../img/macosverkko/terminal_empty-230c12f2.png" style="max-width:100%;" alt="Terminal empty" /></p>
+  <p>Kopioi allaoleva komento juuri avaamaasi komentorivi ikkunaan:</p>
+  <div class="highlight highlight-source-shell"><pre><span class="pl-c1">echo</span> <span class="pl-s"><span class="pl-pds">"</span>127.0.0.1 <span class="pl-s"><span class="pl-pds">$(</span>hostname<span class="pl-pds">)</span></span><span class="pl-pds">"</span></span> <span class="pl-k">|</span> sudo tee -a /etc/hosts</pre></div>
+  <p><img src="../img/macosverkko/komento-181a7c7b.png" style="max-width:100%;" alt="Komento" /></p>
+  <p>Komento pyytää sinulta salasanan (salasana ei näy kirjotettaessa), ja painettuasi enter on ongelma korjattu.</p>
+  <p><img src="../img/macosverkko/komento_suoritettu-555fbdd8.png" style="max-width:100%;" alt="Komento suoritettu" /></p>
+  <p>Lopulta sulje netbeans ja avaa se uudestaan.</p>
+
+  <p>Kiitos <a href="https://github.com/jamo" target="_blank" rel="noopener noreferrer">Jarmo Isotalolle</a> ohjeesta!</p>
+
+  <br>
+
+
+        </div>
+    </div>
+</div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="../javascripts/scripts-d2e4b969.js"></script>
+  </body>
+</html>
