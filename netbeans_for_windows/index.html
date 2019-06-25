@@ -52,13 +52,26 @@
 
 <h3>1. Javan Asentaminen</h3>
   <p>
-   Lataa uusin Java 8:n kehitysympäristö (Java SE Development Kit 8u161) osoitteesta <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html</a>. Todennäköisesti käytössäsi on 64-bittinen Windows-käyttöjärjestelmä, eli lataa tiedosto <code>jdk-8u161-windows-x64.exe</code>. Kun olet ladannut tiedoston, asenna se koneellesi. (Jos saatava numero on suurempi kuin 161, voit ladata myös sen.)
+    Lataa Java 8:n kehitysympäristö osoitteesta <a href="https://adoptopenjdk.net/index.html">https://adoptopenjdk.net/index.html</a>. Valitse sivulta ladattavaksi OpenJDK 8 ja HotSpot. Kun olet ladannut tiedoston, asenna se koneellesi.
   </p>
+  <p>Jos sinulla on muita versioita Javasta asennettuna, ne saattavat estää ohjelmointiympäristä toimimasta oikein. Tässä tilanteessa suosittelemme poistamaan muut Javan versiot. Erityisesti Javan versiot 9, 10 ja 11 ovat ongelmallisia.</p>
+  <p>Alla olevassa videossa näkyy Java 8:n asennus kokonaisuudessaan:</p>
   <div class="embed-container">
-    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/wR1vECnJAag?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/lI0sjAGUcTY?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
   </div>
 
-  <p>Jos sinulla on muita versioita Javasta asennettuna ne, saattavat estää ohjelmointiympäristä toimimasta oikein. Tässä tilanteessa suosittelemme poistamaan muut Javan versiot. Erityisesti Javan versiot 9, 10 ja 11 ovat ongelmallisia.</p>
+<div>
+  <h4>HUOM! Asetathan asennuksen yhteydessä seuraavat valinnat, muutoin NetBeansin asennus ei onnistu:</h4>
+  <ul>
+  <li>Asennuksen "Custom Setup"-vaiheessa kohtaan "Set JAVA_HOME variable" pitää asettaa "Entire feature will be installed on local hard drive".</li>
+  <li>Asennuksen "Custom Setup"-vaiheessa kohtaan "JavaSoft (Oracle) registry keys" pitää asettaa "Entire feature will be installed on local hard drive".</li>
+  </ul>
+  <br>
+  <img src="../img/set_java_home_during_adoptopenjdk_installation-9a167770.png" alt="Javan asennuksessa Custom Setup -vaiheessa JAVA_HOME variable -asetuksen vaihtaminen" class="img-fluid demo-image" />
+  <br>
+  <img src="../img/set_registry_keys_during_adoptopenjdk_installation-effa9007.png" alt="Javan asennuksessa Custom Setup -vaiheessa JavaSoft registry keys -asetuksen vaihtaminen" class="img-fluid demo-image" />
+</div>
+<br>
 
   <h3>2. NetBeans with TMC:n asentaminen</h3>
 
