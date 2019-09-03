@@ -64,11 +64,18 @@
 
   <p>Kirjoita komennolle sen vaihtoehdon numero, jossa lukee Java 8 (esim kirjoittajan koneella "/usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java"), ja paina enter.</p>
 
+
   <p>
-    Asenna tämän jälkeen vielä OpenJFX, jota käytetään käyttöliittymien tekemiseen ja käsittelyyn. Tämän asentaminen onnistuu Ubuntussa (komentoriviltä) komennolla:
+    Asenna tämän jälkeen vielä OpenJFX, jota käytetään käyttöliittymien tekemiseen ja käsittelyyn. Jos sinulla on Ubuntu, joka on vanhrmpi kuin 18.04, saat tämän tehtyä komennolla:
 
     <code><pre>sudo apt-get install openjfx</pre></code>
   </p>
+
+  <p>Jos sinulla on Ubuntu 18.04 tai uudempi, asenna openjfx tästä paketista: <a href="openjfx8.deb">openjfx8.deb</a>. Paketin saa asennettua joko tuplaklikkaamalla sitä tai terminaalista knolla:
+
+  <code><pre>sudo dpkg -i openjfx8.deb</pre></code>
+   </p>
+
 
   <h3>2. NetBeans with TMC:n asentaminen</h3>
 
@@ -89,7 +96,7 @@
     <div class="content-box__box">
 
         <div class="content-box__body">
-            
+
 <h2>Ohjelmoinnin aloittaminen</h2>
 
 <p>
