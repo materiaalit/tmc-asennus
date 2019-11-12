@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>TMC:n asennus | TMC Netbeanssin asentaminen Windowsiin</title>
+    <title>TMC:n asennus | TMC Netbeanssin asentaminen macOS:iin</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link href="../stylesheets/styles-954d2946.css" rel="stylesheet" />
+    <link href="../../stylesheets/styles-954d2946.css" rel="stylesheet" />
   </head>
   <body>
     <div class="container main-container">
@@ -28,49 +28,78 @@
     <div class="content-box__box">
             <div class="content-box__os-selector">
                 <div class="btn-group os-selector" role="group" aria-label="Basic example">
-    <a href="/tmc-asennus/netbeans_for_linux" class="btn btn-lg btn-outline-warning os-selector__linux ">
+    <a href="/tmc-asennus/en/netbeans_for_linux" class="btn btn-lg btn-outline-warning os-selector__linux ">
         <i class="fa fa-linux"></i>
     </a>
 
-    <a href="/tmc-asennus/netbeans_for_macos" class="btn btn-lg btn-outline-warning os-selector__osx ">
+    <a href="/tmc-asennus/en/netbeans_for_macos" class="btn btn-lg btn-outline-warning os-selector__osx active">
         <i class="fa fa-apple"></i>
     </a>
 
-    <a href="/tmc-asennus/netbeans_for_windows" class="btn btn-lg btn-outline-warning os-selector__windows active">
+    <a href="/tmc-asennus/en/netbeans_for_windows" class="btn btn-lg btn-outline-warning os-selector__windows ">
         <i class="fa fa-windows"></i>
     </a>
 </div>
             </div>
 
         <div class="content-box__body">
-            <h2>Asentaminen Windowsiin</h2>
-
+            <!--
+<h2>Asentaminen macOS:iin</h2>
+-->
+<h2>Installing Netbeans for macOS</h2>
+  <!-- 
   <p>
     Joudut asentamaan koneellesi sekä tuen Java-ohjelmien kehittämiselle, että ohjelmien kehittämiseen käytettävän NetBeans with TMC-ympäristön.
   </p>
-
-
-<h3>1. Javan Asentaminen</h3>
+  -->
   <p>
-   Lataa Java 8:n kehitysympäristö (Java SE Development Kit 8u221 TAI VANHEMPI) osoitteesta <a href="https://www.oracle.com/java/technologies/jdk8-downloads.html">https://www.oracle.com/java/technologies/jdk8-downloads.html</a>. Todennäköisesti käytössäsi on 64-bittinen Windows-käyttöjärjestelmä, eli lataa tiedosto <code>jdk-8u221-windows-x64.exe</code>. Kun olet ladannut tiedoston, asenna se koneellesi. (VARMISTA että versionumero ei ole uudempi kuin 8u221 -- ainakin uusin eli 8u231 ei tällä hetkellä toimi hyvin NetBeansin kanssa).
+    You will have to install both java and netbeans TMC-environment.
   </p>
+
+<!-- <h3>1. Javan Asentaminen</h3> -->
+<h3>1. Installing Java</h3>
+  <!-- <p>
+   Lataa uusin Java 8:n kehitysympäristö (Java SE Development Kit 8u161) osoitteesta <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html</a>. Lataa tiedosto <code>jdk-8u161-macosx-x64.dmg</code>. Kun olet ladannut tiedoston, asenna se koneellesi. (Jos saatava numero on suurempi kuin 161, voit ladata myös sen.)
+  </p> -->
   <p>
-   Huomaathan, että joudut luomaan itsellesi Oracle-tunnuksen, joka vaatii muun muassa yrityksen nimen. Voit tunnuksia luodessa laittaa kaikkiin kenttiin, joihin et keksi vastausta, vaikkapa "Lolled Corporation Ltd".
+    Download the latest Java 8 development environment (Java SE Development Kit 8u161) from address <a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html</a>. Download file <code>jdk-8u161-macosx-x64.dmg</code>. Once you've downloaded the file, install it on your computer. (If the available number is bigger than 161, you may download it as well).
   </p>
-  <div class="embed-container">
-    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/wR1vECnJAag?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-  </div>
-
-  <p>Jos sinulla on muita versioita Javasta asennettuna ne, saattavat estää ohjelmointiympäristä toimimasta oikein. Tässä tilanteessa suosittelemme poistamaan muut Javan versiot. Erityisesti Javan versiot 9, 10 ja 11 ovat ongelmallisia.</p>
-
-  <h3>2. NetBeans with TMC:n asentaminen</h3>
-
+  <!-- 
   <p>
-    Lataa tiedosto <a href="http://update.testmycode.net/installers/tmc-netbeans_org_mooc/tmc-netbeans_org_mooc_tmcbeans-windows.exe">http://update.testmycode.net/installers/tmc-netbeans_org_mooc/tmc-netbeans_org_mooc_tmcbeans-windows.exe</a>. Kun tiedoston lataaminen on valmis, asenna sovellus koneellesi.
+    Huomaathan, että joudut luomaan itsellesi Oracle-tunnuksen, joka vaatii muun muassa yrityksen nimen. Voit tunnuksia luodessa laittaa kaikkiin kenttiin, joihin et keksi vastausta, vaikkapa "Lolled Corporation Ltd".
   </p>
-  <div class="embed-container">
-    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/Mwe2vuONhZc?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-  </div>
+  -->
+  <p>
+    Note, you will have to create yourself an Oracle-account, which requires a name of the company. You may put to all fields, which you don't know the input for, for example "Lolled Corporation Ltd"
+  </p>
+
+  <!-- <p>Jos sinulla on muita versioita Javasta asennettuna ne, saattavat estää ohjelmointiympäristä toimimasta oikein. Tässä tilanteessa suosittelemme poistamaan muut Javan versiot. Erityisesti Javan versiot 9, 10 ja 11 ovat ongelmallisia.</p>-->
+  <p>If you have other versions of Java installed, they may prevent IDE from working properly. In this case, we recommend removing all other Java versions. Especially versions 9, 10 and 11 are problematic. </p>
+
+  <!-- <h3>2. NetBeans with TMC:n asentaminen</h3> -->
+  <h3>2. Installing Netbeans with TMC </h3>
+
+  <!--<p>
+    Lataa tiedosto <a href="http://update.testmycode.net/installers/tmc-netbeans_org_mooc/tmc-netbeans_org_mooc_tmcbeans-macosx.tgz">http://update.testmycode.net/installers/tmc-netbeans_org_mooc/tmc-netbeans_org_mooc_tmcbeans-macosx.tgz</a>. Kun tiedoston lataaminen on valmis, asenna sovellus koneellesi.
+  </p>-->
+  Download the file <a href="http://update.testmycode.net/installers/tmc-netbeans_org_mooc/tmc-netbeans_org_mooc_tmcbeans-macosx.tgz">http://update.testmycode.net/installers/tmc-netbeans_org_mooc/tmc-netbeans_org_mooc_tmcbeans-macosx.tgz</a>. Once the download is ready, install it on your computer.
+
+  <!-- <p>
+    Jos ladattu asennusohjelma ei meinaa aueta, koita avata se painamalla sitä hiiren oikealla näppäimellä ja valitsemalla Avaa/Open.
+  </p>-->
+  <p>
+    If the downloaded installation program doesn't seem to open, try opening it with by pressing with the right side of the mouse and selecting 'Open'.
+  </p>
+  <!--
+  <h3>2.1 Verkkoyhteyden korjaaminen macOS:lla</h3>
+    -->
+  <h3>2.1 Fixing internet connection on macOS </h3>
+  <!--<p>
+    Seuraa seuraavaa ohjetta, jotta Netbeans pystyy saamaan kunnolla yhteyden internettiin: <a href="https://materiaalit.github.io/tmc-asennus/macos-verkkoongelma/">ohje</a>.
+  </p>-->
+  <p>
+    Follow the following instruction so that Netbeans may have an access to the Internet: <a href="https://materiaalit.github.io/tmc-asennus/macos-verkkoongelma/">Instructions</a>.
+  </p>
 
         </div>
     </div>
@@ -99,7 +128,7 @@
   Käynnistä asentamasi TMC-ohjelmointiympäristö. Kun ohjelmointiympäristö käynnistyy, se kysyy sinulta sähköpostiosoitetta ja salasanaasi. Aseta sähköpostiosoitteeksi ja salasanaksi edellisessä kohdassa luomasi MOOC.fi -tunnukset.
 </p>
 
-<img src="../img/tmcbeans-login-208b1faf.png" class="img-fluid demo-image" alt="Tmcbeans login" />
+<img src="../../img/tmcbeans-login-208b1faf.png" class="img-fluid demo-image" alt="Tmcbeans login" />
 
 <h3>Organisaation valinta</h3>
 
@@ -107,7 +136,7 @@
   Tämän jälkeen ohjelmointiympäristö kysyy organisaatiota, missä teet tehtäviä. Valitse organisaatioksi kurssimateriaalissasi sanottu organisaatio. Esimerkiksi kurssilla "Ohjelmoinnin MOOC 2019" organisaationa on "MOOC"-organisaatio.
 </p>
 
-<img src="../img/tmcbeans-select-organization-20c1d061.png" class="img-fluid demo-image" alt="Tmcbeans select organization" />
+<img src="../../img/tmcbeans-select-organization-20c1d061.png" class="img-fluid demo-image" alt="Tmcbeans select organization" />
 
 <h3>Kurssin valinta</h3>
 
@@ -117,7 +146,7 @@
 
   <p>Tämän jälkeen sinulle avautuu TMC:n settings ikkuna. Oletusasetukset pitäisi olla riittävät kurssin tekemiseen. Huom! Tästä asetusnäytöstä projektikansion vaihtaminen on aiheuttanut joillekkin Windows-käyttäjille ongelmia. Tästä syystä emme suosittele Windowsin käyttäjille projektikansion vaihtamista automaattisesti synkronoituviin kansiohin kuten OneDriveen, Google Driveen, Dropboxiin tai verkkolevyihin.</p>
 
-<img src="../img/tmcbeans-select-course-20c1d061.png" class="img-fluid demo-image" alt="Tmcbeans select course" />
+<img src="../../img/tmcbeans-select-course-20c1d061.png" class="img-fluid demo-image" alt="Tmcbeans select course" />
 
 
 <h3>Ensimmäisen tehtävän tekeminen</h3>
@@ -130,7 +159,7 @@
   Lataa tehtävät koneellesi.
 </p>
 
-<img src="../img/tmcbeans-project-sidebar-5c3aa40e.png" class="float-right left-margin side-image" alt="Tmcbeans project sidebar" />
+<img src="../../img/tmcbeans-project-sidebar-5c3aa40e.png" class="float-right left-margin side-image" alt="Tmcbeans project sidebar" />
 
 <p>
   Nyt tehtävät ovat ladattuna ohjelmointiympäristössä. Tehtävät näkyvät vasemmalla olevassa listauksessa. Valitse listauksesta Projects-välilehti, niin tehtäviin liittyy myös oikein saamisesta kertova pieni palloindikaattori.
@@ -157,7 +186,7 @@ public class AdaLovelace {
 }
 </pre>
 
-<img src="../img/tmcbeans-toolbar-run-ccde4f2e.png" class="float-right left-margin half-width side-image" alt="Tmcbeans toolbar run" />
+<img src="../../img/tmcbeans-toolbar-run-ccde4f2e.png" class="float-right left-margin half-width side-image" alt="Tmcbeans toolbar run" />
 
 <h3>Lähdekoodin ajaminen</h3>
 
@@ -181,7 +210,7 @@ Ada Lovelace :D
   Tehtävissä tulee usein mukana automaattisia testejä, jotka antavat palautetta tehtävän onnistumisesta. Testit ajetaan klikkaamalla TMC:ssä testinappia, joka näyttää seuraavalta.
 </p>
 
-<img src="../img/tmcbeans-toolbar-test-2769f289.png" class="float-right left-margin half-width side-image" alt="Tmcbeans toolbar test" />
+<img src="../../img/tmcbeans-toolbar-test-2769f289.png" class="float-right left-margin half-width side-image" alt="Tmcbeans toolbar test" />
 
 <p>
   Kun suoritat yllä luodun AdaLovelace-tehtävän testit, testien pitäisi antaa virheilmoitus. Virheilmoitusta tarkastelemalla saamme selville, että tulostus ei ollut toivottu. Tulostuksen olisi pitänyt olla muotoa "Ada Lovelace".
@@ -207,7 +236,7 @@ public class AdaLovelace {
 
 <h3>Tehtävän lähettäminen palvelimelle</h3>
 
-<img src="../img/tmcbeans-toolbar-submit-6fde93b2.png" class="float-right left-margin side-image" alt="Tmcbeans toolbar submit" />
+<img src="../../img/tmcbeans-toolbar-submit-6fde93b2.png" class="float-right left-margin side-image" alt="Tmcbeans toolbar submit" />
 
 <p>
   Tehtävän lähettäminen palvelimelle tarkoittaa tehtävän palauttamista arvostelua varten. Tehtävät tarkastetaan lähes poikkeuksetta automaattisesti, joten saat tehtävistä pisteet (tai mahdollisen virheviestin) nopeasti.
@@ -232,22 +261,11 @@ public class AdaLovelace {
     </div>
 </div>
 
-<div class="content-box ">
-    <div class="content-box__box">
-
-        <div class="content-box__body">
-            
-<h3>JAVA_HOME -ongelma</h3>
-<p>Jos törmäät "ERROR: Compilation failed" -virheeseen ajaessasi testejä NetBeansissa, katso seuraava ohje virheen korjaamiseksi: <a href="../java_home_not_found/">JAVA_HOME virhe testejä ajaessa</a><p>
-
-        </div>
-    </div>
-</div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-    <script src="../javascripts/scripts-d2e4b969.js"></script>
+    <script src="../../javascripts/scripts-d2e4b969.js"></script>
   </body>
 </html>
